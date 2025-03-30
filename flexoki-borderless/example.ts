@@ -34,7 +34,7 @@ interface User {
 const user: User = {
   id: 1,
   name: "Alice",
-  createdAt: new Date()
+  createdAt: new Date(),
 };
 
 // Interface Extension
@@ -49,7 +49,7 @@ const admin: AdminUser = {
   id: 2,
   name: "Bob",
   createdAt: new Date(),
-  permissions: ["read", "write", "delete"]
+  permissions: ["read", "write", "delete"],
 };
 
 // Generics
@@ -87,7 +87,7 @@ enum Direction {
   Up = "UP",
   Down = "DOWN",
   Left = "LEFT",
-  Right = "RIGHT"
+  Right = "RIGHT",
 }
 const move: Direction = Direction.Up;
 
@@ -144,7 +144,10 @@ class Animal {
 
 // Inheritance
 class Dog extends Animal {
-  constructor(name: string, private breed: string) {
+  constructor(
+    name: string,
+    private breed: string,
+  ) {
     super(name);
   }
 
@@ -184,7 +187,7 @@ function processValue(value: unknown): void {
 }
 
 // Mapped Types
-type Readonly<T> = {
+type Readonly_<T> = {
   readonly [P in keyof T]: T[P];
 };
 
@@ -205,12 +208,15 @@ const partialTodo: Partial<Todo> = { title: "Learn TypeScript" };
 const requiredTodo: Required<Todo> = {
   title: "Learn TypeScript",
   description: "Study common patterns",
-  completed: false
+  completed: false,
 };
 
 // Pick - Select specific properties
 type TodoPreview = Pick<Todo, "title" | "completed">;
-const todoPreview: TodoPreview = { title: "Learn TypeScript", completed: false };
+const todoPreview: TodoPreview = {
+  title: "Learn TypeScript",
+  completed: false,
+};
 
 // Omit - Remove specific properties
 type TodoWithoutDescription = Omit<Todo, "description">;

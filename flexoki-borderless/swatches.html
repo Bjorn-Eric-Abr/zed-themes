@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexoki Theme Color Showcase</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #F2F0E5;
+            color: #100F0F;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .color-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #FFFCF0;
+        }
+        .color-swatch {
+            height: 100px;
+            width: 100%;
+        }
+        .color-info {
+            padding: 1rem;
+            text-align: center;
+        }
+        .color-hex {
+            font-family: monospace;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .color-name {
+            font-size: 0.9rem;
+            color: #6F6E69;
+            margin-top: 0.5rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #DAD8CE;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexoki Theme Color Showcase</h1>
+
+    <div class="section">
+        <h2 class="section-title">UI Colors</h2>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #FFFCF0;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#FFFCF0</div>
+                    <div class="color-name">Background/Border</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #F2F0E5;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#F2F0E5</div>
+                    <div class="color-name">Element Background</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #DAD8CE;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#DAD8CE</div>
+                    <div class="color-name">Border Selected</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #CECDC3;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#CECDC3</div>
+                    <div class="color-name">Element Selected</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #6F6E69;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#6F6E69</div>
+                    <div class="color-name">Text Muted</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #100F0F;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#100F0F</div>
+                    <div class="color-name">Editor Foreground</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #cacfd2;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#cacfd2</div>
+                    <div class="color-name">Terminal Bright Black</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">ANSI/Status Colors</h2>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #AF3029;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#AF3029</div>
+                    <div class="color-name">Red/Error</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #66800B;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#66800B</div>
+                    <div class="color-name">Green/Created</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #AD8301;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#AD8301</div>
+                    <div class="color-name">Yellow</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #205EA6;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#205EA6</div>
+                    <div class="color-name">Blue/Info</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #24837B;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#24837B</div>
+                    <div class="color-name">Cyan/Modified</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #BC5215;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#BC5215</div>
+                    <div class="color-name">Warning</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Syntax Colors</h2>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #5E409D;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#5E409D</div>
+                    <div class="color-name">Number</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #A02F6F;"></div>
+                <div class="color-info">
+                    <div class="color-hex">#A02F6F</div>
+                    <div class="color-name">Preprocessor</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
